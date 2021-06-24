@@ -9,7 +9,7 @@ Graph::Graph(int node, float density, float min_distance, float max_distance)
       max_distance(max_distance) {
     // allocate memory
     for (int i = 0; i < node; i++) {
-        g[i] = new float(node);
+        g[i] = new float[node];
     }
 
     // generate value
